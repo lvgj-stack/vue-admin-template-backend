@@ -1,0 +1,35 @@
+RunMode: debug
+Addr: :8080                  # HTTP绑定端口
+
+# MySQL 数据库相关配置
+Database:
+  User: root
+  Password:
+  Host:
+  Schema:
+  MaxIdleConns: 10
+  MaxOpenConns: 100
+  ConnMaxLifetime: 150
+  EnableLog:
+
+Jwt:
+  Key: Key
+  IdentityKey: identityKey
+
+Log:
+  Level: INFO
+  MaxSize: 500
+  MaxBackups: 5
+  MaxAge: 7
+  Compress: true
+  Filename:
+
+AccessLog:
+  Level: INFO
+  MaxSize: 500
+  MaxBackups: 5
+  MaxAge: 7
+  Compress: true
+  Filename:
+  Structured: True
+  CallerSkip: 3
